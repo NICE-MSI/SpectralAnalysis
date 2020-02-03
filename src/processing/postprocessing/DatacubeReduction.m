@@ -275,7 +275,7 @@ classdef DatacubeReduction < DataReduction
                 
             end
             
-            dataRepresentationList = generateDataRepresentationList(this, dataRepresentation, this.peakList, data, rois);
+            dataRepresentationList = generateDataRepresentationList(this, dataRepresentation, this.peakDetails(:,2), data, rois);
         end
         
         function writeOutimzML(this, dataRepresentation)
